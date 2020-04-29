@@ -1,6 +1,9 @@
 import pytest
-import src.exercise
+from src.pet import Pet
+from src.person import Person
 
 def test_exercise():
-    #implement tests here
-    assert 0 == 0
+    lucky = Pet("Lucky", "collie")
+    james = Person("James", lucky)
+
+    assert str(james) == "James, has a friend called Lucky (collie)"
