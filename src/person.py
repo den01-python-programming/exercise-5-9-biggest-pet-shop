@@ -1,4 +1,4 @@
-from src.pet import Pet
+from pet import Pet
 
 class Person:
 
